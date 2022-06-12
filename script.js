@@ -38,13 +38,13 @@ cells.forEach((cell) =>
       // display game over somewhere and play again button which will reload the page
       if (thereIsWinner) {
         if (count % 2 === 0) {
-          result.textContent = "player 1 wins the game";
+          result.textContent = "Player 1 wins the game";
         } else {
-          result.textContent = "player 2 wins the game";
+          result.textContent = "Player 2 wins the game";
         }
       }
       if (thereIsATie) {
-        result.textContent = "it's a tie";
+        result.textContent = "It's a tie";
       }
       e.preventDefault();
     }

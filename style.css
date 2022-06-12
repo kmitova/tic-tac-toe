@@ -1,28 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Russo One", sans-serif;
+  background-color: black;
 }
 
 h1 {
   text-align: center;
+  color: white;
+  font-size: 3rem;
 }
 
 h3 {
   text-align: center;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .board {
   display: grid;
   gap: 1px;
-  grid-template-columns: repeat(3, minmax(100px, .1fr));
+  grid-template-columns: repeat(3, 150px);
 }
 
 .cell {
   padding: auto;
-  background-color: #ccc;
+  background-color: #fafafa;
   aspect-ratio: 1;
-  font-size: 2rem;
+  font-size: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,5 +45,17 @@ h3 {
 button {
   display: block;
   margin: auto;
-  margin-top: 2em;
+  margin-top: 1em;
+  font-family: "Russo One", sans-serif;
+  border: none;
+  font-size: 2rem;
+  background-color: #fafafa;
+  padding: 0.3em;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .board {
+    grid-template-columns: repeat(3, 100px);
+  }
 }
